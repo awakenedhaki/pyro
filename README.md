@@ -29,3 +29,9 @@ pyro -p 1
 Either action will gather problem statement, sample data, and sample output and write them into files within a new directory. The directory will be named as `001 - DNA`. 
 
 Further development will focus on checking whether your script output, when running against the sample data, is the same as the sample output provided. Another feature would be creating template files for your specified languages.
+
+__TODO__:
+
+* Check if script output matches sample output
+* Create templates files in specified languages
+* Fix suggest.py
