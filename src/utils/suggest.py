@@ -4,7 +4,7 @@ import os
 import json
 
 from typing import List
-from misc import load_problemID
+from utils.misc import load_problemID
 
 def suggestCorrection(id: str) -> None:
     '''

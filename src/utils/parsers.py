@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 from typing import List
-from misc import addNewLine
+from utils.misc import addNewLine
 
 def parseHeader(html: BeautifulSoup) -> str:
     '''

@@ -2,17 +2,17 @@
 
 import os
 import json
-import parsers
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from typing import List
-from misc import load_problemID
+from utils import parsers
+from utils.misc import load_problemID
 
 home: str = os.getenv('HOME')
 path = f'{home}/rosalind'
 
-pyro_path = f'{home}/pyro'
+pyro_path = f'{home}/pyro/src/'
 
 url = 'http://rosalind.info/problems'
 

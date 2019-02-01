@@ -11,10 +11,10 @@ The README.md is created within a directory named after the problem ID.
 '''
 
 import click
-import suggest
+import utils.suggest
 
 from urllib.error import HTTPError
-from misc import vMessage, markComplete
+from utils.misc import vMessage, markComplete
 from pyro import pyro
 
 @click.command(help='''Creates a Markdown file for a given Rosalind 
