@@ -1,10 +1,5 @@
 
 *.pyc
 __pycache__/misc.py
-.idea/workspace.xml
-.idea/vcs.xml
-.idea/rosalind_scraper.iml
-.idea/modules.xml
-.idea/misc.xml
-.idea/libraries/R_User_Library.xml
+.idea/
 .DS_Store
