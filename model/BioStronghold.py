@@ -93,3 +93,7 @@ class BioStronghold:
         if not os.path.exists(self.dirPath):
             os.mkdir(self.dirPath)
 
+    def verbose(self):
+        for string in ["README.md", "sample.txt", "output.txt"]:
+            print(f"{string} -> {self.dirPath}")
+
