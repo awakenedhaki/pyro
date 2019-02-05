@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 
 from utils.utils import addNewLine
@@ -67,9 +68,15 @@ class BioStronghold:
         '''
         Scrapes Rosalind for Bioinformatics Stronghold html content
         '''
-        r = requests.get(f"http://rosalind.info/problems/{self.id}")
-        self.soup = BeautifulSoup(r.content, "html.parser")
-        return self
+        try:
+            r = requests.get(f"http://rosalind.info/problems/{self.id}")
+            r.raise_for_status()
+        except requests.HTTPError:
+            print("Not a valid problem ID.")
+            sys.exit(0)
+        else:
+            self.soup = BeautifulSoup(r.content, "html.parser")
+            return self
 
     def saveProblem(self) -> None:
         '''
