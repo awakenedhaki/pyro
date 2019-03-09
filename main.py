@@ -1,20 +1,12 @@
-#! /usr/bin/env python
-
-# author: awakenedhaki
-
+import json
 import click
 
-from model.BioStronghold import BioStronghold
+from parsers.ProblemJSONParser import ProblemJSONParser
 
 @click.command()
-@click.option("--id")
-@click.option("-v", "--verbose", is_flag=True)
-def main(id, verbose):
-    p = BioStronghold(id)
-    if id:
-        p.scrape().saveProblem()
-    if verbose:
-        p.verbose()
+def main():
+    with open("rosalindProblems/problems.json", "r") as infile:
+        problems = json.load(infile)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
