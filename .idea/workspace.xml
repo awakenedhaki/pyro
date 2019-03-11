@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7cd3185-f813-4922-b551-d11e1ba58268" name="Default Changelist" comment="" />
+    <list default="true" id="b7cd3185-f813-4922-b551-d11e1ba58268" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/model/TwoKeyDict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsers/ProblemHTMLParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsers/ProblemHTMLParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/ProblemsJSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/ProblemsJSON.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosalindProblems.py" beforeDir="false" afterPath="$PROJECT_DIR$/rosalindProblems.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/IdListScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/IdListScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/Scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/Scraper.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +62,44 @@
     <session id="-1024617726">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="3852" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="3852" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+          <entry key="py" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rosalindProblems.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -72,20 +107,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/TwoKeyDict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="420">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1552337898418" expanded="true" signature="270:271" ph="..." />
+                <marker date="1552337898418" expanded="true" signature="270:276" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rosalindProblems/problems.json">
+        <entry file="file://$PROJECT_DIR$/model/Problem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="184">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <marker date="1552336731388" expanded="true" signature="141:142" ph="..." />
+                <marker date="1552336731388" expanded="true" signature="141:147" ph="..." />
+                <marker date="1552336731388" expanded="true" signature="369:373" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +143,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -108,16 +155,17 @@
         <option value="$PROJECT_DIR$/parsers/ProblemParsers.py" />
         <option value="$PROJECT_DIR$/persistence/problemJson.py" />
         <option value="$PROJECT_DIR$/persistence/ProblemJSON.py" />
-        <option value="$PROJECT_DIR$/scrapers/IdListScraper.py" />
         <option value="$PROJECT_DIR$/scrapers/ProblemScraper.py" />
         <option value="$PROJECT_DIR$/rosalindProblems/problems.json" />
-        <option value="$PROJECT_DIR$/rosalindProblems.py" />
-        <option value="$PROJECT_DIR$/persistence/ProblemsJSON.py" />
-        <option value="$PROJECT_DIR$/scrapers/Scraper.py" />
-        <option value="$PROJECT_DIR$/parsers/ProblemHTMLParser.py" />
-        <option value="$PROJECT_DIR$/model/Problem.py" />
         <option value="$PROJECT_DIR$/parsers/ProblemJSONParser.py" />
+        <option value="$PROJECT_DIR$/parsers/ProblemHTMLParser.py" />
+        <option value="$PROJECT_DIR$/persistence/ProblemsJSON.py" />
+        <option value="$PROJECT_DIR$/scrapers/IdListScraper.py" />
+        <option value="$PROJECT_DIR$/scrapers/Scraper.py" />
+        <option value="$PROJECT_DIR$/rosalindProblems.py" />
+        <option value="$PROJECT_DIR$/model/Problem.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/model/TwoKeyDict.py" />
       </list>
     </option>
   </component>
@@ -131,6 +179,24 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyUnresolvedReferencesInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -142,6 +208,11 @@
             <path>
               <item name="pyro" type="b2602c69:ProjectViewProjectNode" />
               <item name="pyro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyro" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,7 +291,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1702432" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17668097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -281,50 +352,38 @@
     <entry file="file://$PROJECT_DIR$/parsers/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/Scraper.py">
+    <entry file="file://$PROJECT_DIR$/rosalindProblems/problems.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/ProblemScraper.py">
+    <entry file="file://$PROJECT_DIR$/persistence/ProblemsJSON.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="92">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/IdListScraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/ProblemsJSON.py">
+    <entry file="file://$PROJECT_DIR$/scrapers/Scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parsers/ProblemHTMLParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding>
-            <marker date="1552162711649" expanded="true" signature="82:83" ph="..." />
-          </folding>
+        <state relative-caret-position="93">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -335,39 +394,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Problem.py">
+    <entry file="file://$PROJECT_DIR$/scrapers/ProblemScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <marker date="1552163658608" expanded="true" signature="33:34" ph="..." />
-            <marker date="1552163658608" expanded="true" signature="33:39" ph="..." />
-            <marker date="1552163658608" expanded="true" signature="250:251" ph="..." />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rosalindProblems.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="483">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1552336731388" expanded="true" signature="141:142" ph="..." />
+            <marker date="1552336731388" expanded="true" signature="141:147" ph="..." />
+            <marker date="1552336731388" expanded="true" signature="369:373" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rosalindProblems/problems.json">
+    <entry file="file://$PROJECT_DIR$/model/TwoKeyDict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="420">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1552337898418" expanded="true" signature="270:271" ph="..." />
+            <marker date="1552337898418" expanded="true" signature="270:276" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -3,7 +3,11 @@ from scrapers.Scraper import Scraper
 
 class IdListScraper(Scraper):
 
-    def __init__(self, location=None):
+    """
+    Scrapes problem IDs from HTML table
+    """
+
+    def __init__(self, location=None) -> None:
         Scraper.params["location"] = location
         Scraper.url = "http://rosalind.info/problems/list-view/"
 

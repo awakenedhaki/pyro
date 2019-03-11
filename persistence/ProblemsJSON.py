@@ -5,11 +5,11 @@ from model.Problem import Problem
 
 class ProblemsJSON():
 
-    def to_json(self, problems: List[Problem]):
+    def to_json(self, problems: List[Problem]) -> None:
         """
         Saves list of Problem as a JSON object.
         :param problems:
-        :return:
+        :return: None
         """
         with open("./rosalindProblems/problems.json", "w") as outfile:
             json.dump(problems, outfile)

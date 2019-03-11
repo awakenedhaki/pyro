@@ -1,8 +1,14 @@
+from typing import Dict
+
 class Problem():
+
+    """
+    Problem is a Rosalind Bioinformatics Stronhold Problem object
+    """
 
     soup = None
 
-    def __init__(self, num, id) -> None:
+    def __init__(self, num=None, id=None) -> None:
         self.num = num
         self.id = id
         self.title = None
@@ -11,10 +17,12 @@ class Problem():
         self.output = None
         self.topics = None
 
-    def to_dict(self):
+    def to_dict(self) -> Dict:
         """
-        Dictionary representation of Problem object,
-        containing the object's fields.
+        Dictionary of Problem instance variables.
         :return: dict
         """
-        return self.__dict__
+        classDict = {"className": self.__class__,
+                     "moduleName": self.__module__}
+        classDict.update(self.__dict__)
+        return classDict

@@ -2,6 +2,7 @@ import requests
 
 from bs4 import BeautifulSoup
 from requests import Response
+from typing import Dict
 
 
 class Scraper():
@@ -11,7 +12,7 @@ class Scraper():
     """
 
     url = None
-    params = {}
+    params: Dict = {}
 
     def scrape(self):
         """
