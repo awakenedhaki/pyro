@@ -11,6 +11,7 @@ class TupledKeyDict(dict):
 
     New methods:
         self.specifiedKeys
+        self.to_dict
     """
 
     def __init__(self):
