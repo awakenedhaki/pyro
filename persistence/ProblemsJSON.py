@@ -10,10 +10,10 @@ class ProblemsJSON():
         :param problems:
         :return: None
         """
-        with open("./rosalindProblems/problems.json", "w") as outfile:
+        with open("./problems.json", "w") as outfile:
             json.dump({str(k): v for k, v in problems.items()}, outfile)
 
     def unferment(self) -> TupledKeyDict:
-        with open("./rosalindProblems/problems.json", "r") as infile:
+        with open("./problems.json", "r") as infile:
             dictLoad = json.load(infile)
         return TupledKeyDict().from_dict(dictLoad)
