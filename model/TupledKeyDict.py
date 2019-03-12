@@ -17,13 +17,14 @@ class TupledKeyDict(dict):
     def __init__(self):
         super()
 
-    def from_dict(self, dictionary: dict) -> None:
+    def from_dict(self, dictionary: dict):
         """
         Converts a python dict() into a TupledKeyDict object
         :param dictionary: dict
         :return: TupledKeyDict
         """
         for k, v in dictionary.items():
+            # Turns k string into tuple
             self.__setitem__(literal_eval(k), v)
         return self
 
@@ -38,7 +39,7 @@ class TupledKeyDict(dict):
             if key in keyTuple or key == keyTuple:
                 return self.get(keyTuple)
 
-    def specifiedKeys(self, index) -> Tuple:
+    def specifiedKeys(self, index=None, select=False) -> Tuple:
         """
         Returns a tuple of keys, from a specified index
             keys = (("key1_0", "key1_1),
@@ -47,4 +48,7 @@ class TupledKeyDict(dict):
         :param index: int
         :return: Tuple[object]
         """
-        return tuple(zip(*self.keys()))[index]
+        if not select:
+            return tuple(zip(*self.keys()))
+        elif select:
+            return tuple(zip(*self.keys()))[index]
