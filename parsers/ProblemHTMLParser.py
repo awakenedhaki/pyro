@@ -43,7 +43,8 @@ class ProblemHTMLParser():
                 .get_text() \
                 .split(":")[1] \
                 .split(",")
-            ProblemHTMLParser.problem.topics = ", ".join([tempTopic.strip() for tempTopic in tempTopics])
+            ProblemHTMLParser.problem.topics = \
+                ", ".join([tempTopic.strip() for tempTopic in tempTopics])
         except AttributeError as e:
             # If there are no tags
             ProblemHTMLParser.problem.topics = None
@@ -62,9 +63,7 @@ class ProblemHTMLParser():
             # Only want the last two codehilite tags in any problem.
             #   codehilite is the HTML tag for sample data and sample output
             for codehilite in soup.find_all("div", class_="codehilite")[-2:]:
-                codehilite_text = codehilite.get_text().strip()
-                # if not codehilite_text.startswith("http"):
-                #     sample.append(codehilite_text)
+                sample.append(codehilite.get_text().strip())
             ProblemHTMLParser.problem.data, ProblemHTMLParser.problem.output = sample
         except ValueError:
             # if there is no sample data or sample output
