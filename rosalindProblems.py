@@ -6,7 +6,7 @@ from model.TupledKeyDict import TupledKeyDict
 from parsers.ProblemHTMLParser import ProblemHTMLParser
 from scrapers.IdListScraper import IdListScraper
 from scrapers.ProblemScraper import ProblemScraper
-from persistence.ProblemsPickle import ProblemsPickle
+from persistence.ProblemsJSON import ProblemsJSON
 
 def rosalindProblems() -> None:
     """
@@ -14,7 +14,6 @@ def rosalindProblems() -> None:
         Stores scraped data as JSON.
     :return: None
     """
-    # TupledKeyDictionary
     problems: TupledKeyDict[dict] = TupledKeyDict()
     ids: List[str] = IdListScraper("bioinformatics-stronghold").scrape().ids
     probHTMLParser = ProblemHTMLParser()
@@ -29,7 +28,7 @@ def rosalindProblems() -> None:
         # Percentage progress
         print(f"{num}: {probID} - {str(round(progress/size * 100, 2))}%",
               flush=True, end="\r")
-    ProblemsPickle().ferment(problems)
+    ProblemsJSON().ferment(problems)
 
 if __name__ == '__main__':
     rosalindProblems()

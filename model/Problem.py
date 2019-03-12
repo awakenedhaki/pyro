@@ -22,7 +22,7 @@ class Problem():
         Dictionary of Problem instance variables.
         :return: dict
         """
-        classDict = {"className": self.__class__,
+        classDict = {"className": self.__class__.__name__,
                      "moduleName": self.__module__}
         classDict.update(self.__dict__)
         return classDict
