@@ -1,0 +1,6 @@
+{
+  "path": "rosalind",
+  "templates": {"python": "py",
+                "java": "java",
+                "r": "r"}
+}
