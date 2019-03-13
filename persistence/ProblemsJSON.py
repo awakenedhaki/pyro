@@ -1,4 +1,5 @@
 import json
+from typing import Dict
 
 from model.TupledKeyDict import TupledKeyDict
 
@@ -11,9 +12,10 @@ class ProblemsJSON():
         :return: None
         """
         with open("./problems.json", "w") as outfile:
+            # Convert key to string, JSON cannot store tuple
             json.dump({str(k): v for k, v in problems.items()}, outfile)
 
     def unferment(self) -> TupledKeyDict:
         with open("./problems.json", "r") as infile:
-            dictLoad = json.load(infile)
+            dictLoad: Dict = json.load(infile)
         return TupledKeyDict().from_dict(dictLoad)
