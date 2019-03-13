@@ -1,7 +1,7 @@
 import os
-import shutil
 
 from typing import Dict
+from model.TupledKeyDict import TupledKeyDict
 
 class Problem():
 
@@ -41,9 +41,9 @@ class Problem():
         classDict.update(self.__dict__)
         return classDict
 
-    def setUp(self, otherProblem, path, lang) -> None:
+    def setUp(self, otherProblem: TupledKeyDict, path, lang: str) -> None:
         """
-
+        Sets self fields with those specified in otherProblem
         :param otherProblem: Dict
         :return: None
         """
@@ -52,7 +52,7 @@ class Problem():
 
     def createDocuments(self, path, lang) -> None:
         """
-
+        Creates Problem directory, and files.
         :return: None
         """
         with open(f"./languageTemplates/template.{lang}", "r") as infile:
@@ -61,11 +61,20 @@ class Problem():
             os.chdir(path)
             os.mkdir(self.dirName)
         except FileNotFoundError as e:
-            raise Exception("Missing rosalind directory at home.")
+            raise Exception("Missing rosalind directory at home directory.")
         except FileExistsError as e:
             pass
         finally:
             dest = os.path.join(path, self.dirName, f"solution.{lang}")
-            print(str(dest))
             with open(dest, "w") as outfile:
                 outfile.write(template)
+            self.writeSample(path)
+
+    def writeSample(self, path):
+        os.chdir(path)
+        for leaf in ["output.txt", "data.txt"]:
+            with open(f"{path}/{self.dirName}/{leaf}", "w") as outfile:
+                if leaf is "output.txt":
+                    outfile.write(self.output)
+                if leaf is "data.txt":
+                    outfile.write(self.data)
