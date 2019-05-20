@@ -12,7 +12,7 @@ setup(
         "exceptions"
     ],
     url="https://github.com/awakenedhaki/pyro",
-    license="MIT",
+    license="MIT License",
     author="awakenedhaki",
     author_email="",
     description="Command line interface for Rosalind Bioinformatics Stronghold Problems",
