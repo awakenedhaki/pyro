@@ -4,12 +4,8 @@ setup(
     name="pyro",
     version="0.1.0",
     packages=[
-        "pyro", 
-        "model", 
-        "scraper", 
-        "parsers", 
-        "persistence", 
-        "exceptions"
+        "pyro"
+        'jsons'
     ],
     url="https://github.com/awakenedhaki/pyro",
     license="MIT",
@@ -18,8 +14,8 @@ setup(
     description="Command line interface for Rosalind Bioinformatics Stronghold Problems",
     python_requires=">=3",
     install_requires=[
-        "requests",
-        "beautifulsoup4",
-        "click"
+        'click',
+        'requests',
+        'beautifulsoup4'
     ]
 )
