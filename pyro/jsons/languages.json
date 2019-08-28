@@ -1,0 +1,3 @@
+{
+  "python": "Path(__file__).parent / 'templates' / 'template.py'"
+}

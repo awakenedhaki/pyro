@@ -1,0 +1,1056 @@
+{
+  "data": [
+    {
+      "id": "DNA",
+      "title": "Counting DNA Nucleotides",
+      "solved_by": "38366",
+      "correct_ratio": "61%",
+      "given": "A DNA string s of length at most 1000 nt.",
+      "return": "Four integers (separated by spaces) counting the respective number of times that the\nsymbols 'A', 'C', 'G', and 'T' occur in s.",
+      "sample_dataset": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
+      "sample_output": "20 12 17 21"
+    },
+    {
+      "id": "RNA",
+      "title": "Transcribing DNA into RNA",
+      "solved_by": "34289",
+      "correct_ratio": "86%",
+      "given": "A DNA string t having length at most 1000 nt.",
+      "return": "The transcribed RNA string of t.",
+      "sample_dataset": "GATGGAACTTGACTACGTAAATT",
+      "sample_output": "GAUGGAACUUGACUACGUAAAUU"
+    },
+    {
+      "id": "REVC",
+      "title": "Complementing a Strand of DNA",
+      "solved_by": "31062",
+      "correct_ratio": "76%",
+      "given": "A DNA string s of length at most 1000 bp.",
+      "return": "The reverse complement s^{\\textrm{c}} of s.",
+      "sample_dataset": "AAAACCCGGT",
+      "sample_output": "ACCGGGTTTT"
+    },
+    {
+      "id": "FIB",
+      "title": "Rabbits and Recurrence Relations",
+      "solved_by": "17810",
+      "correct_ratio": "66%",
+      "given": "Positive integers n \\leq 40 and k \\leq 5.",
+      "return": "The total number of rabbit pairs that will be present after n months, if we begin with 1 pair and in each generation,\nevery pair of reproduction-age rabbits produces a litter of k rabbit pairs (instead of only 1 pair).",
+      "sample_dataset": "5 3",
+      "sample_output": "19"
+    },
+    {
+      "id": "GC",
+      "title": "Computing GC Content",
+      "solved_by": "18164",
+      "correct_ratio": "47%",
+      "given": "At most 10 DNA strings in FASTA format (of length at most 1 kbp each).",
+      "return": "The ID of the string having the highest GC-content, followed by the GC-content of that string.\nRosalind allows for a default error of 0.001 in all decimal answers unless otherwise\nstated; please see the note on absolute error below.",
+      "sample_dataset": ">Rosalind_6404\nCCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC\nTCCCACTAATAATTCTGAGG\n>Rosalind_5959\nCCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCT\nATATCCATTTGTCAGCAGACACGC\n>Rosalind_0808\nCCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGAC\nTGGGAACCTGCGGGCAGTAGGTGGAAT",
+      "sample_output": "Rosalind_0808\n60.919540"
+    },
+    {
+      "id": "HAMM",
+      "title": "Counting Point Mutations",
+      "solved_by": "20546",
+      "correct_ratio": "91%",
+      "given": "Two DNA strings s and t of equal length (not exceeding 1 kbp).",
+      "return": "The Hamming distance d_{\\mathrm{H}}(s, t).",
+      "sample_dataset": "GAGCCTACTAACGGGAT\nCATCGTAATGACGGCCT",
+      "sample_output": "7"
+    },
+    {
+      "id": "IPRB",
+      "title": "Mendel's First Law",
+      "solved_by": "11855",
+      "correct_ratio": "71%",
+      "given": "Three positive integers k, m, and n, representing a population containing k+m+n organisms:\nk individuals are homozygous dominant for a factor, m are heterozygous, and n are homozygous recessive.",
+      "return": "The probability that two randomly selected mating organisms will produce an individual possessing a dominant allele\n(and thus displaying the dominant phenotype). Assume that any two organisms can mate.",
+      "sample_dataset": "2 2 2",
+      "sample_output": "0.78333"
+    },
+    {
+      "id": "PROT",
+      "title": "Translating RNA into Protein",
+      "solved_by": "15960",
+      "correct_ratio": "68%",
+      "given": "An RNA string s corresponding to a strand of mRNA (of length at most 10 kbp).",
+      "return": "The protein string encoded by s.",
+      "sample_dataset": "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA",
+      "sample_output": "MAMAPRTEINSTRING"
+    },
+    {
+      "id": "SUBS",
+      "title": "Finding a Motif in DNA",
+      "solved_by": "16378",
+      "correct_ratio": "72%",
+      "given": "Two DNA strings s and t (each of length at most 1 kbp).",
+      "return": "All locations of t as a substring of s.",
+      "sample_dataset": "GATATATGCATATACTT\nATAT",
+      "sample_output": "2 4 10"
+    },
+    {
+      "id": "CONS",
+      "title": "Consensus and Profile",
+      "solved_by": "9108",
+      "correct_ratio": "47%",
+      "given": "A collection of at most 10 DNA strings of equal length (at most 1 kbp) in FASTA format.",
+      "return": "A consensus string and profile matrix for the collection.\n(If several possible consensus strings exist, then you may return any one of them.)",
+      "sample_dataset": ">Rosalind_1\nATCCAGCT\n>Rosalind_2\nGGGCAACT\n>Rosalind_3\nATGGATCT\n>Rosalind_4\nAAGCAACC\n>Rosalind_5\nTTGGAACT\n>Rosalind_6\nATGCCATT\n>Rosalind_7\nATGGCACT",
+      "sample_output": "ATGCAACT\nA: 5 1 0 0 5 5 0 0\nC: 0 0 1 4 2 0 6 1\nG: 1 1 6 3 0 1 0 0\nT: 1 5 0 0 0 1 1 6"
+    },
+    {
+      "id": "FIBD",
+      "title": "Mortal Fibonacci Rabbits",
+      "solved_by": "7653",
+      "correct_ratio": "46%",
+      "given": "Positive integers n \\leq 100 and m \\leq 20.",
+      "return": "The total number of pairs of rabbits that will remain after the n-th\nmonth if all rabbits live for m months.",
+      "sample_dataset": "6 3",
+      "sample_output": "4"
+    },
+    {
+      "id": "GRPH",
+      "title": "Overlap Graphs",
+      "solved_by": "7514",
+      "correct_ratio": "48%",
+      "given": "A collection of DNA strings in FASTA format having total length at most 10 kbp.",
+      "return": "The adjacency list corresponding to \\mathrm{O}_3.  You may return edges in any order.",
+      "sample_dataset": ">Rosalind_0498\nAAATAAA\n>Rosalind_2391\nAAATTTT\n>Rosalind_2323\nTTTTCCC\n>Rosalind_0442\nAAATCCC\n>Rosalind_5013\nGGGTGGG",
+      "sample_output": "Rosalind_0498 Rosalind_2391\nRosalind_0498 Rosalind_0442\nRosalind_2391 Rosalind_2323"
+    },
+    {
+      "id": "IEV",
+      "title": "Calculating Expected Offspring",
+      "solved_by": "6919",
+      "correct_ratio": "80%",
+      "given": "Six nonnegative integers, each of which does not exceed 20,000.\nThe integers correspond to the number of couples in a population possessing each genotype pairing for a given factor.\nIn order, the six given integers represent the number of couples having the following genotypes:",
+      "return": "The expected number of offspring displaying the dominant phenotype in the next\ngeneration, under the assumption that every couple has exactly two offspring.",
+      "sample_dataset": "1 0 0 1 0 1",
+      "sample_output": "3.5"
+    },
+    {
+      "id": "LCSM",
+      "title": "Finding a Shared Motif",
+      "solved_by": "6400",
+      "correct_ratio": "66%",
+      "given": "A collection of k (k \\leq 100) DNA strings of length at most 1 kbp each in\nFASTA format.",
+      "return": "A longest common substring of the collection. (If multiple solutions\nexist, you may return any single solution.)",
+      "sample_dataset": ">Rosalind_1\nGATTACA\n>Rosalind_2\nTAGACCA\n>Rosalind_3\nATACA",
+      "sample_output": "AC"
+    },
+    {
+      "id": "LIA",
+      "title": "Independent Alleles",
+      "solved_by": "3661",
+      "correct_ratio": "65%",
+      "given": "Two positive integers k (k \\leq 7) and N (N \\leq 2^k).  In this problem, we begin with Tom, who in the 0th generation\nhas genotype Aa Bb.  Tom has two children in the 1st generation, each of whom has two children, and so on.\nEach organism always mates with an organism having genotype Aa Bb.",
+      "return": "The probability that at least N Aa Bb organisms will belong to the k-th generation of Tom's family tree\n(don't count the Aa Bb mates at each level).  Assume that Mendel's second law holds for the factors.",
+      "sample_dataset": "2 1",
+      "sample_output": "0.684"
+    },
+    {
+      "id": "MPRT",
+      "title": "Finding a Protein Motif",
+      "solved_by": "3988",
+      "correct_ratio": "48%",
+      "given": "At most 15 UniProt Protein Database access IDs.",
+      "return": "For each protein possessing the N-glycosylation motif, output its given access ID followed\nby a list of locations in the protein string where the motif can be found.",
+      "sample_dataset": "A2Z669\nB5ZC00\nP07204_TRBM_HUMAN\nP20840_SAG1_YEAST",
+      "sample_output": "B5ZC00\n85 118 142 306 395\nP07204_TRBM_HUMAN\n47 115 116 382 409\nP20840_SAG1_YEAST\n79 109 135 248 306 348 364 402 485 501 614"
+    },
+    {
+      "id": "MRNA",
+      "title": "Inferring mRNA from Protein",
+      "solved_by": "6159",
+      "correct_ratio": "64%",
+      "given": "A protein string of length at most 1000 aa.",
+      "return": "The total number of different RNA strings from which the protein could have been translated, modulo 1,000,000.\n(Don't neglect the importance of the stop codon in protein translation.)",
+      "sample_dataset": "MA",
+      "sample_output": "12"
+    },
+    {
+      "id": "ORF",
+      "title": "Open Reading Frames",
+      "solved_by": "4755",
+      "correct_ratio": "46%",
+      "given": "A DNA string s of length at most 1 kbp in FASTA format.",
+      "return": "Every distinct candidate protein string that can be translated from ORFs of s.\nStrings can be returned in any order.",
+      "sample_dataset": ">Rosalind_99\nAGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG",
+      "sample_output": "MLLGSFRLIPKETLIQVAGSSPCNLS\nM\nMGMTPRLGLESLLE\nMTPRLGLESLLE"
+    },
+    {
+      "id": "PERM",
+      "title": "Enumerating Gene Orders",
+      "solved_by": "8445",
+      "correct_ratio": "65%",
+      "given": "A positive integer n \\leq 7.",
+      "return": "The total number of permutations of length n, followed by a list of all such\npermutations (in any order).",
+      "sample_dataset": "3",
+      "sample_output": "6\n1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1"
+    },
+    {
+      "id": "PRTM",
+      "title": "Calculating Protein Mass",
+      "solved_by": "7881",
+      "correct_ratio": "78%",
+      "given": "A protein string P of length at most 1000 aa.",
+      "return": "The total weight of P.  Consult the monoisotopic mass table.",
+      "sample_dataset": "SKADYEK",
+      "sample_output": "821.392"
+    },
+    {
+      "id": "REVP",
+      "title": "Locating Restriction Sites",
+      "solved_by": "5026",
+      "correct_ratio": "46%",
+      "given": "A DNA string of length at most 1 kbp in FASTA format.",
+      "return": "The position and length of every reverse palindrome\nin the string having length between 4 and 12.  You may return these pairs in any order.",
+      "sample_dataset": ">Rosalind_24\nTCAATGCATGCGGGTCTATATGCAT",
+      "sample_output": "4 6\n5 4\n6 6\n7 4\n17 4\n18 4\n20 6\n21 4"
+    },
+    {
+      "id": "SPLC",
+      "title": "RNA Splicing",
+      "solved_by": "5595",
+      "correct_ratio": "66%",
+      "given": "A DNA string s (of length at most 1 kbp) and a collection of substrings\nof s acting as introns.  All strings are given in FASTA format.",
+      "return": "A protein string resulting from transcribing and translating the exons of s.\n(Note: Only one solution will exist for the dataset provided.)",
+      "sample_dataset": ">Rosalind_10\nATGGTCTACATAGCTGACAAACAGCACGTAGCAATCGGTCGAATCTCGAGAGGCATATGGTCACATGATCGGTCGAGCGTGTTTCAAAGTTTGCGCCTAG\n>Rosalind_12\nATCGGTCGAA\n>Rosalind_15\nATCGGTCGAGCGTGT",
+      "sample_output": "MVYIADKQHVASREAYGHMFKVCA"
+    },
+    {
+      "id": "LEXF",
+      "title": "Enumerating k-mers Lexicographically",
+      "solved_by": "4695",
+      "correct_ratio": "65%",
+      "given": "A collection of at most 10 symbols defining an ordered alphabet, and a positive integer n (n \\leq 10).",
+      "return": "All strings of length n that can be formed from the alphabet, ordered lexicographically (use the standard order of symbols in the English alphabet).",
+      "sample_dataset": "A C G T\n2",
+      "sample_output": "AA\nAC\nAG\nAT\nCA\nCC\nCG\nCT\nGA\nGC\nGG\nGT\nTA\nTC\nTG\nTT"
+    },
+    {
+      "id": "LGIS",
+      "title": "Longest Increasing Subsequence",
+      "solved_by": "2041",
+      "correct_ratio": "52%",
+      "given": "A positive integer n \\leq 10000 followed by a permutation \\pi of length n.",
+      "return": "A longest increasing subsequence of \\pi, followed by a longest decreasing subsequence of \\pi.",
+      "sample_dataset": "5\n5 1 4 2 3",
+      "sample_output": "1 2 3\n5 4 2"
+    },
+    {
+      "id": "LONG",
+      "title": "Genome Assembly as Shortest Superstring",
+      "solved_by": "2353",
+      "correct_ratio": "52%",
+      "given": "At most 50 DNA strings of approximately equal length, not exceeding 1 kbp, in FASTA format\n(which represent reads deriving from the same strand of a single linear chromosome).",
+      "return": "A shortest superstring containing all the given strings (thus corresponding\nto a reconstructed chromosome).",
+      "sample_dataset": ">Rosalind_56\nATTAGACCTG\n>Rosalind_57\nCCTGCCGGAA\n>Rosalind_58\nAGACCTGCCG\n>Rosalind_59\nGCCGGAATAC",
+      "sample_output": "ATTAGACCTGCCGGAATAC"
+    },
+    {
+      "id": "PMCH",
+      "title": "Perfect Matchings and RNA Secondary Structures",
+      "solved_by": "2233",
+      "correct_ratio": "69%",
+      "given": "An RNA string s of length at most 80 bp having the same number of occurrences of 'A' as 'U' and the same number\nof occurrences of 'C' as 'G'.",
+      "return": "The total possible number of perfect matchings of basepair edges in the bonding graph of s.",
+      "sample_dataset": ">Rosalind_23\nAGCUAGUCAU",
+      "sample_output": "12"
+    },
+    {
+      "id": "PPER",
+      "title": "Partial Permutations",
+      "solved_by": "3103",
+      "correct_ratio": "82%",
+      "given": "Positive integers n and k such that 100 \\geq n > 0 and 10 \\geq k > 0.",
+      "return": "The total number of partial permutations P(n, k), modulo 1,000,000.",
+      "sample_dataset": "21 7",
+      "sample_output": "51200"
+    },
+    {
+      "id": "PROB",
+      "title": "Introduction to Random Strings",
+      "solved_by": "3034",
+      "correct_ratio": "83%",
+      "given": "A DNA string s of length at most 100 bp and an array A containing at most 20 numbers between 0 and 1.",
+      "return": "An array B having the same length as A in which B[k]\nrepresents the common logarithm of the probability\nthat a random string constructed with the GC-content found in A[k] will match s exactly.",
+      "sample_dataset": "ACGATACAA\n0.129 0.287 0.423 0.476 0.641 0.742 0.783",
+      "sample_output": "-5.737 -5.217 -5.263 -5.360 -5.958 -6.628 -7.009"
+    },
+    {
+      "id": "SIGN",
+      "title": "Enumerating Oriented Gene Orderings",
+      "solved_by": "3117",
+      "correct_ratio": "64%",
+      "given": "A positive integer n \\leq 6.",
+      "return": "The total number of signed permutations of length n, followed by a list\nof all such permutations (you may list the signed permutations in any order).",
+      "sample_dataset": "2",
+      "sample_output": "8\n-1 -2\n-1 2\n1 -2\n1 2\n-2 -1\n-2 1\n2 -1\n2 1"
+    },
+    {
+      "id": "SSEQ",
+      "title": "Finding a Spliced Motif",
+      "solved_by": "3370",
+      "correct_ratio": "69%",
+      "given": "Two DNA strings s and t (each of length at most 1 kbp) in FASTA format.",
+      "return": "One collection of indices of s in which the symbols of t\nappear as a subsequence of s. If multiple solutions exist, you may return any one.",
+      "sample_dataset": ">Rosalind_14\nACGTACGTGACG\n>Rosalind_18\nGTA",
+      "sample_output": "3 8 10"
+    },
+    {
+      "id": "TRAN",
+      "title": "Transitions and Transversions",
+      "solved_by": "3235",
+      "correct_ratio": "91%",
+      "given": "Two DNA strings s_1 and s_2 of equal length (at most 1 kbp).",
+      "return": "The transition/transversion ratio R(s_1, s_2).",
+      "sample_dataset": ">Rosalind_0209\nGCAACGCACAACGAAAACCCTTAGGGACTGGATTATTTCGTGATCGTTGTAGTTATTGGA\nAGTACGGGCATCAACCCAGTT\n>Rosalind_2200\nTTATCTGACAAAGAAAGCCGTCAACGGCTGGATAATTTCGCGATCGTGCTGGTTACTGGC\nGGTACGAGTGTTCCTTTGGGT",
+      "sample_output": "1.21428571429"
+    },
+    {
+      "id": "TREE",
+      "title": "Completing a Tree",
+      "solved_by": "2744",
+      "correct_ratio": "60%",
+      "given": "A positive integer n (n \\leq 1000) and an adjacency list corresponding to a graph on n nodes\nthat contains no cycles.",
+      "return": "The minimum number of edges that can be added to the graph to produce a tree.",
+      "sample_dataset": "10\n1 2\n2 8\n4 10\n5 9\n6 10\n7 9",
+      "sample_output": "3"
+    },
+    {
+      "id": "CAT",
+      "title": "Catalan Numbers and RNA Secondary Structures",
+      "solved_by": "931",
+      "correct_ratio": "44%",
+      "given": "An RNA string s having the same number of occurrences of 'A' as 'U' and the same number\nof occurrences of 'C' as 'G'. The length of the string is at most 300 bp.",
+      "return": "The total number of noncrossing perfect matchings of basepair edges in the bonding\ngraph of s, modulo 1,000,000.",
+      "sample_dataset": ">Rosalind_57\nAUAU",
+      "sample_output": "2"
+    },
+    {
+      "id": "CORR",
+      "title": "Error Correction in Reads",
+      "solved_by": "1499",
+      "correct_ratio": "48%",
+      "given": "A collection of up to 1000 reads of equal length (at most 50 bp) in FASTA format.\nSome of these reads were generated with a single-nucleotide error.\nFor each read s in the dataset, one of the following applies:",
+      "return": "A list of all corrections in the form \"[old read]->[new read]\".  (Each correction\nmust be a single symbol substitution, and you may return the corrections in any order.)",
+      "sample_dataset": ">Rosalind_52\nTCATC\n>Rosalind_44\nTTCAT\n>Rosalind_68\nTCATC\n>Rosalind_28\nTGAAA\n>Rosalind_95\nGAGGA\n>Rosalind_66\nTTTCA\n>Rosalind_33\nATCAA\n>Rosalind_21\nTTGAT\n>Rosalind_18\nTTTCC",
+      "sample_output": "TTCAT->TTGAT\nGAGGA->GATGA\nTTTCC->TTTCA"
+    },
+    {
+      "id": "INOD",
+      "title": "Counting Phylogenetic Ancestors",
+      "solved_by": "2034",
+      "correct_ratio": "80%",
+      "given": "A positive integer n (3 \\leq n \\leq 10000).",
+      "return": "The number of internal nodes of any unrooted binary tree having n leaves.",
+      "sample_dataset": "4",
+      "sample_output": "2"
+    },
+    {
+      "id": "KMER",
+      "title": "k-Mer Composition",
+      "solved_by": "2273",
+      "correct_ratio": "65%",
+      "given": "A DNA string s in FASTA format (having length at most 100 kbp).",
+      "return": "The 4-mer composition of s.",
+      "sample_dataset": ">Rosalind_6431\nCTTCGAAAGTTTGGGCCGAGTCTTACAGTCGGTCTTGAAGCAAAGTAACGAACTCCACGG\nCCCTGACTACCGAACCAGTTGTGAGTACTCAACTGGGTGAGAGTGCAGTCCCTATTGAGT\nTTCCGAGACTCACCGGGATTTTCGATCCAGCCTCAGTCCAGTCTTGTGGCCAACTCACCA\nAATGACGTTGGAATATCCCTGTCTAGCTCACGCAGTACTTAGTAAGAGGTCGCTGCAGCG\nGGGCAAGGAGATCGGAAAATGTGCTCTATATGCGACTAAAGCTCCTAACTTACACGTAGA\nCTTGCCCGTGTTAAAAACTCGGCTCACATGCTGTCTGCGGCTGGCTGTATACAGTATCTA\nCCTAATACCCTTCAGTTCGCCGCACAAAAGCTGGGAGTTACCGCGGAAATCACAG",
+      "sample_output": "4 1 4 3 0 1 1 5 1 3 1 2 2 1 2 0 1 1 3 1 2 1 3 1 1 1 1 2 2 5 1 3 0 2 2 1 1 1 1 3 1 0 0 1 5 5 1 5 0 2 0 2 1 2 1 1 1 2 0 1 0 0 1 1 3 2 1 0 3 2 3 0 0 2 0 8 0 0 1 0 2 1 3 0 0 0 1 4 3 2 1 1 3 1 2 1 3 1 2 1 2 1 1 1 2 3 2 1 1 0 1 1 3 2 1 2 6 2 1 1 1 2 3 3 3 2 3 0 3 2 1 1 0 0 1 4 3 0 1 5 0 2 0 1 2 1 3 0 1 2 2 1 1 0 3 0 0 4 5 0 3 0 2 1 1 3 0 3 2 2 1 1 0 2 1 0 2 2 1 2 0 2 2 5 2 2 1 1 2 1 2 2 2 2 1 1 3 4 0 2 1 1 0 1 2 2 1 1 1 5 2 0 3 2 1 1 2 2 3 0 3 0 1 3 1 2 3 0 2 1 2 2 1 2 3 0 1 2 3 1 1 3 1 0 1 1 3 0 2 1 2 2 0 2 1 1"
+    },
+    {
+      "id": "KMP",
+      "title": "Speeding Up Motif Finding",
+      "solved_by": "1811",
+      "correct_ratio": "45%",
+      "given": "A DNA string s (of length at most 100 kbp) in FASTA format.",
+      "return": "The failure array of s.",
+      "sample_dataset": ">Rosalind_87\nCAGCATGGTATCACAGCAGAG",
+      "sample_output": "0 0 0 1 2 0 0 0 0 0 0 1 2 1 2 3 4 5 3 0 0"
+    },
+    {
+      "id": "LCSQ",
+      "title": "Finding a Shared Spliced Motif",
+      "solved_by": "1569",
+      "correct_ratio": "51%",
+      "given": "Two DNA strings s and t (each having length at most 1 kbp) in FASTA format.",
+      "return": "A longest common subsequence of s and t.\n(If more than one solution exists, you may return any one.)",
+      "sample_dataset": ">Rosalind_23\nAACCTTGG\n>Rosalind_64\nACACTGTGA",
+      "sample_output": "AACTGG"
+    },
+    {
+      "id": "LEXV",
+      "title": "Ordering Strings of Varying Length Lexicographically",
+      "solved_by": "2546",
+      "correct_ratio": "73%",
+      "given": "A permutation of at most 12 symbols defining an ordered alphabet \\mathscr{A} and a positive integer n (n \\leq 4).",
+      "return": "All strings of length at most n formed from \\mathscr{A}, ordered lexicographically.\n(Note: As in \u201cEnumerating k-mers Lexicographically\u201d, alphabet order is based on the order in which the symbols are given.)",
+      "sample_dataset": "D N A\n3",
+      "sample_output": "D\nDD\nDDD\nDDN\nDDA\nDN\nDND\nDNN\nDNA\nDA\nDAD\nDAN\nDAA\nN\nND\nNDD\nNDN\nNDA\nNN\nNND\nNNN\nNNA\nNA\nNAD\nNAN\nNAA\nA\nAD\nADD\nADN\nADA\nAN\nAND\nANN\nANA\nAA\nAAD\nAAN\nAAA"
+    },
+    {
+      "id": "MMCH",
+      "title": "Maximum Matchings and RNA Secondary Structures",
+      "solved_by": "1111",
+      "correct_ratio": "46%",
+      "given": "An RNA string s of length at most 100.",
+      "return": "The total possible number of maximum matchings of basepair edges in the bonding graph of s.",
+      "sample_dataset": ">Rosalind_92\nAUGCUUC",
+      "sample_output": "6"
+    },
+    {
+      "id": "PDST",
+      "title": "Creating a Distance Matrix",
+      "solved_by": "1640",
+      "correct_ratio": "71%",
+      "given": "A collection of n (n \\leq 10) DNA strings s_1, \\ldots, s_n of equal length (at most 1 kbp).\nStrings are given in FASTA format.",
+      "return": "The matrix D corresponding to the p-distance d_p on the given strings.  As always,\nnote that your answer is allowed an absolute error of 0.001.",
+      "sample_dataset": ">Rosalind_9499\nTTTCCATTTA\n>Rosalind_0942\nGATTCATTTC\n>Rosalind_6568\nTTTCCATTTT\n>Rosalind_1833\nGTTCCATTTA",
+      "sample_output": "0.00000 0.40000 0.10000 0.10000\n0.40000 0.00000 0.40000 0.30000\n0.10000 0.40000 0.00000 0.20000\n0.10000 0.30000 0.20000 0.00000"
+    },
+    {
+      "id": "REAR",
+      "title": "Reversal Distance",
+      "solved_by": "797",
+      "correct_ratio": "42%",
+      "given": "A collection of at most 5 pairs of permutations, all of which have length 10.",
+      "return": "The reversal distance between each permutation pair.",
+      "sample_dataset": "1 2 3 4 5 6 7 8 9 10\n3 1 5 2 7 4 9 6 10 8\n\n3 10 8 2 5 4 7 1 6 9\n5 2 3 1 7 4 10 8 6 9\n\n8 6 7 9 4 1 3 10 2 5\n8 2 7 6 9 1 5 3 10 4\n\n3 9 10 4 1 8 6 7 5 2\n2 9 8 5 1 7 3 4 6 10\n\n1 2 3 4 5 6 7 8 9 10\n1 2 3 4 5 6 7 8 9 10",
+      "sample_output": "9 4 5 7 0"
+    },
+    {
+      "id": "RSTR",
+      "title": "Matching Random Motifs",
+      "solved_by": "1253",
+      "correct_ratio": "87%",
+      "given": "A positive integer N \\leq 100000, a number x between 0 and 1, and a DNA string s of length at most 10 bp.",
+      "return": "The probability that if N random DNA strings having the same length as s\nare constructed with GC-content x (see \u201cIntroduction to Random Strings\u201d), then at least one of the strings equals s.\nWe allow for the same random string to be created more than once.",
+      "sample_dataset": "90000 0.6\nATAGCCGA",
+      "sample_output": "0.689"
+    },
+    {
+      "id": "SSET",
+      "title": "Counting Subsets",
+      "solved_by": "1917",
+      "correct_ratio": "75%",
+      "given": "A positive integer n (n \\leq 1000).",
+      "return": "The total number of subsets of \\{1, 2, \\ldots, n\\} modulo 1,000,000.",
+      "sample_dataset": "3",
+      "sample_output": "8"
+    },
+    {
+      "id": "ASPC",
+      "title": "Introduction to Alternative Splicing",
+      "solved_by": "1204",
+      "correct_ratio": "66%",
+      "given": "Positive integers n and m with 0 \\leq m \\leq n \\leq 2000.",
+      "return": "The sum of combinations C(n, k) for all k satisfying m \\leq k \\leq n,\nmodulo 1,000,000.  In shorthand, \\sum_{k=m}^{n}{\\binom{n}{k}}.",
+      "sample_dataset": "6 3",
+      "sample_output": "42"
+    },
+    {
+      "id": "EDIT",
+      "title": "Edit Distance",
+      "solved_by": "1159",
+      "correct_ratio": "57%",
+      "given": "Two protein strings s and t in FASTA format (each of length at most 1000 aa).",
+      "return": "The edit distance d_{\\textrm{E}}(s, t).",
+      "sample_dataset": ">Rosalind_39\nPLEASANTLY\n>Rosalind_11\nMEANLY",
+      "sample_output": "5"
+    },
+    {
+      "id": "EVAL",
+      "title": "Expected Number of Restriction Sites",
+      "solved_by": "940",
+      "correct_ratio": "83%",
+      "given": "A positive integer n (n \\leq 1,000,000), a DNA string s of even length at most 10,\nand an array A of length at most 20, containing numbers between 0 and 1.",
+      "return": " An array B having the same length as A in which B[i] represents the expected number of times that s\nwill appear as a substring of a random DNA string t of length n,\nwhere t is formed with GC-content A[i] (see \u201cIntroduction to Random Strings\u201d).",
+      "sample_dataset": "10\nAG\n0.25 0.5 0.75",
+      "sample_output": "0.422 0.563 0.422"
+    },
+    {
+      "id": "MOTZ",
+      "title": "Motzkin Numbers and RNA Secondary Structures",
+      "solved_by": "592",
+      "correct_ratio": "68%",
+      "given": "An RNA string s of length at most 300 bp.",
+      "return": "The total number of noncrossing matchings of basepair edges in the bonding graph\nof s, modulo 1,000,000.",
+      "sample_dataset": ">Rosalind_57\nAUAU",
+      "sample_output": "7"
+    },
+    {
+      "id": "NWCK",
+      "title": "Distances in Trees",
+      "solved_by": "742",
+      "correct_ratio": "47%",
+      "given": "A collection of n trees (n \\leq 40) in Newick format, with each tree containing at most 200 nodes;\neach tree T_k is followed by a pair of nodes x_k and y_k in T_k.",
+      "return": "A collection of n positive integers, for which the kth integer represents the distance\nbetween x_k and y_k in T_k.",
+      "sample_dataset": "(cat)dog;\ndog cat\n\n(dog,cat);\ndog cat",
+      "sample_output": "1 2"
+    },
+    {
+      "id": "SCSP",
+      "title": "Interleaving Two Motifs",
+      "solved_by": "715",
+      "correct_ratio": "69%",
+      "given": "Two DNA strings s and t.",
+      "return": "A shortest common supersequence of s and t.  If multiple solutions exist, you may\noutput any one.",
+      "sample_dataset": "ATCTGAT\nTGCATA",
+      "sample_output": "ATGCATGAT"
+    },
+    {
+      "id": "SETO",
+      "title": "Introduction to Set Operations",
+      "solved_by": "1510",
+      "correct_ratio": "69%",
+      "given": "A positive integer n (n \\leq 20,000) and two subsets A and B of \\{1, 2, \\ldots, n\\}.",
+      "return": "Six sets: A \\cup B, A \\cap B, A - B, B - A, A^{\\textrm{c}}, and B^{\\textrm{c}}\n(where set complements are taken with respect to \\{1, 2, \\ldots, n\\}).",
+      "sample_dataset": "10\n{1, 2, 3, 4, 5}\n{2, 8, 5, 10}",
+      "sample_output": "{1, 2, 3, 4, 5, 8, 10}\n{2, 5}\n{1, 3, 4}\n{8, 10}\n{8, 9, 10, 6, 7}\n{1, 3, 4, 6, 7, 9}"
+    },
+    {
+      "id": "SORT",
+      "title": "Sorting by Reversals",
+      "solved_by": "613",
+      "correct_ratio": "52%",
+      "given": "Two permutations \\pi and \\gamma, each of length 10.",
+      "return": "The reversal distance d_{\\textrm{rev}}(\\pi, \\gamma), followed by\na collection of reversals sorting \\pi into \\gamma.  If multiple collections of such\nreversals exist, you may return any one.",
+      "sample_dataset": "1 2 3 4 5 6 7 8 9 10\n1 8 9 3 2 7 6 5 4 10",
+      "sample_output": "2\n4 9\n2 5"
+    },
+    {
+      "id": "SPEC",
+      "title": "Inferring Protein from Spectrum",
+      "solved_by": "1175",
+      "correct_ratio": "73%",
+      "given": "A list L of n (n \\leq 100) positive real numbers.",
+      "return": "A protein string of length n-1 whose prefix spectrum is equal to L\n(if multiple solutions exist, you may output any one of them).  Consult the monoisotopic mass table.",
+      "sample_dataset": "3524.8542\n3710.9335\n3841.974\n3970.0326\n4057.0646",
+      "sample_output": "WMQS"
+    },
+    {
+      "id": "TRIE",
+      "title": "Introduction to Pattern Matching",
+      "solved_by": "916",
+      "correct_ratio": "68%",
+      "given": "A list of at most 100 DNA strings of length at most 100 bp, none of which is a prefix of another.",
+      "return": "The adjacency list corresponding to the trie T for these patterns, in the following format.\nIf T has n nodes, first label the root with 1 and then label the remaining nodes with the integers 2\nthrough n in any order you like.  Each edge of the adjacency list of T will be\nencoded by a triple containing the integer representing the edge's parent node,\nfollowed by the integer representing the edge's child node, and finally the symbol labeling the edge.",
+      "sample_dataset": "ATAGA\nATC\nGAT",
+      "sample_output": "1 2 A\n2 3 T\n3 4 A\n4 5 G\n5 6 A\n3 7 C\n1 8 G\n8 9 A\n9 10 T"
+    },
+    {
+      "id": "CONV",
+      "title": "Comparing Spectra with the Spectral Convolution",
+      "solved_by": "752",
+      "correct_ratio": "75%",
+      "given": "Two multisets of positive real numbers S_1 and S_2. The size of each multiset is at most 200.",
+      "return": "The largest multiplicity of S_1 \\ominus S_2, as well as the absolute value of the number x maximizing\n(S_1 \\ominus S_2)(x) (you may return any such value if multiple solutions exist).",
+      "sample_dataset": "186.07931 287.12699 548.20532 580.18077 681.22845 706.27446 782.27613 968.35544 968.35544\n101.04768 158.06914 202.09536 318.09979 419.14747 463.17369",
+      "sample_output": "3\n85.03163"
+    },
+    {
+      "id": "CTBL",
+      "title": "Creating a Character Table",
+      "solved_by": "425",
+      "correct_ratio": "58%",
+      "given": "An unrooted binary tree T in Newick format for at most 200 species taxa.",
+      "return": "A character table having the same splits as the edge splits of T. The columns of the character table\nshould encode the taxa ordered lexicographically; the rows of the character table may be given\nin any order.  Also, for any given character, the particular subset of taxa to which 1s are\nassigned is arbitrary.",
+      "sample_dataset": "(dog,((elephant,mouse),robot),cat);",
+      "sample_output": "00110\n00111"
+    },
+    {
+      "id": "DBRU",
+      "title": "Constructing a De Bruijn Graph",
+      "solved_by": "772",
+      "correct_ratio": "61%",
+      "given": "A collection of up to 1000 (possibly repeating) DNA strings of equal length (not exceeding 50 bp) corresponding to a set S of (k+1)-mers.",
+      "return": "The adjacency list corresponding to the de Bruijn graph corresponding to S \\cup S^{\\textrm{rc}}.",
+      "sample_dataset": "TGAT\nCATG\nTCAT\nATGC\nCATC\nCATC",
+      "sample_output": "(ATC, TCA)\n(ATG, TGA)\n(ATG, TGC)\n(CAT, ATC)\n(CAT, ATG)\n(GAT, ATG)\n(GCA, CAT)\n(TCA, CAT)\n(TGA, GAT)"
+    },
+    {
+      "id": "EDTA",
+      "title": "Edit Distance Alignment",
+      "solved_by": "760",
+      "correct_ratio": "47%",
+      "given": "Two protein strings s and t in FASTA format (with each string having length at most 1000 aa).",
+      "return": "The edit distance d_{\\textrm{E}}(s, t) followed by two augmented strings s' and t'\nrepresenting an optimal alignment of s and t.",
+      "sample_dataset": ">Rosalind_43\nPRETTY\n>Rosalind_97\nPRTTEIN",
+      "sample_output": "4\nPRETTY--\nPR-TTEIN"
+    },
+    {
+      "id": "FULL",
+      "title": "Inferring Peptide from Full Spectrum",
+      "solved_by": "531",
+      "correct_ratio": "66%",
+      "given": "A list L containing 2n + 3 positive real numbers (n \\leq 100). The first number in L is the parent mass\nof a peptide P, and all other numbers represent the masses of some b-ions and y-ions of P (in no particular order).\nYou may assume that if the mass of a b-ion is present, then so is that of its complementary y-ion, and vice-versa.",
+      "return": "A protein string t of length n for which there exist two positive real numbers w_1 and w_2\nsuch that for every prefix p and suffix s of t, each of w(p) + w_1 and w(s) + w_2 is\nequal to an element of L.  (In other words, there exists a protein string whose t-prefix and\nt-suffix weights correspond to the non-parent mass values of L.)  If multiple solutions exist, you may\noutput any one.",
+      "sample_dataset": "1988.21104821\n610.391039105\n738.485999105\n766.492149105\n863.544909105\n867.528589105\n992.587499105\n995.623549105\n1120.6824591\n1124.6661391\n1221.7188991\n1249.7250491\n1377.8200091",
+      "sample_output": "KEKEP"
+    },
+    {
+      "id": "INDC",
+      "title": "Independent Segregation of Chromosomes",
+      "solved_by": "611",
+      "correct_ratio": "55%",
+      "given": "A positive integer n \\leq 50.",
+      "return": "An array A of length 2n in which A[k] represents the common logarithm\nof the probability that two diploid siblings share at least k of their 2n chromosomes (we do not consider\nrecombination for now).",
+      "sample_dataset": "5",
+      "sample_output": "0.000 -0.004 -0.024 -0.082 -0.206 -0.424 -0.765 -1.262 -1.969 -3.010"
+    },
+    {
+      "id": "ITWV",
+      "title": "Finding Disjoint Motifs in a Gene",
+      "solved_by": "292",
+      "correct_ratio": "59%",
+      "given": "A text DNA string s of length at most 10 kbp,\nfollowed by a collection of n (n \\leq 10) DNA strings of length at most 10 bp acting as patterns.",
+      "return": "An n \\times n matrix M for which M_{j, k} = 1 if the jth and kth\npattern strings can be interwoven into s and M_{j, k} = 0 otherwise.",
+      "sample_dataset": "GACCACGGTT\nACAG\nGT\nCCG",
+      "sample_output": "0 0 1\n0 1 0\n1 0 0"
+    },
+    {
+      "id": "LREP",
+      "title": "Finding the Longest Multiple Repeat",
+      "solved_by": "421",
+      "correct_ratio": "60%",
+      "given": "A DNA string s (of length at most 20 kbp) with  appended,\na positive integer k, and a list of edges defining the suffix tree of s.\nEach edge is represented by four components:",
+      "return": "The longest substring of s that occurs at least k times in s. (If multiple solutions\nexist, you may return any single solution.)",
+      "sample_dataset": "CATACATAC$\n2\nnode1 node2 1 1\nnode1 node7 2 1\nnode1 node14 3 3\nnode1 node17 10 1\nnode2 node3 2 4\nnode2 node6 10 1\nnode3 node4 6 5\nnode3 node5 10 1\nnode7 node8 3 3\nnode7 node11 5 1\nnode8 node9 6 5\nnode8 node10 10 1\nnode11 node12 6 5\nnode11 node13 10 1\nnode14 node15 6 5\nnode14 node16 10 1",
+      "sample_output": "CATAC"
+    },
+    {
+      "id": "NKEW",
+      "title": "Newick Format with Edge Weights",
+      "solved_by": "465",
+      "correct_ratio": "69%",
+      "given": "A collection of n weighted trees (n \\leq 40) in Newick format, with each tree containing at most 200 nodes;\neach tree T_k is followed by a pair of nodes x_k and y_k in T_k.",
+      "return": "A collection of n numbers, for which the kth number represents the distance\nbetween x_k and y_k in T_k.",
+      "sample_dataset": "(dog:42,cat:33);\ncat dog\n\n((dog:4,cat:3):74,robot:98,elephant:58);\ndog elephant",
+      "sample_output": "75 136"
+    },
+    {
+      "id": "RNAS",
+      "title": "Wobble Bonding and RNA Secondary Structures",
+      "solved_by": "419",
+      "correct_ratio": "81%",
+      "given": "An RNA string s (of length at most 200 bp).",
+      "return": "The total number of distinct valid matchings of basepair edges in the bonding graph of s.\nAssume that wobble base pairing is allowed.",
+      "sample_dataset": "AUGCUAGUACGGAGCGAGUCUAGCGAGCGAUGUCGUGAGUACUAUAUAUGCGCAUAAGCCACGU",
+      "sample_output": "284850219977421"
+    },
+    {
+      "id": "AFRQ",
+      "title": "Counting Disease Carriers",
+      "solved_by": "518",
+      "correct_ratio": "91%",
+      "given": "An array A for which A[k] represents the proportion of homozygous recessive\nindividuals for the k-th Mendelian factor in a diploid population.\nAssume that the population is in genetic equilibrium for all factors.",
+      "return": "An array B having the same length as A in which B[k] represents the probability\nthat a randomly selected individual carries at least one copy of the recessive allele for the k-th factor.",
+      "sample_dataset": "0.1 0.25 0.5",
+      "sample_output": "0.532 0.75 0.914"
+    },
+    {
+      "id": "CSTR",
+      "title": "Creating a Character Table from Genetic Strings",
+      "solved_by": "277",
+      "correct_ratio": "70%",
+      "given": "A collection of at most 100 characterizable DNA strings, each of length at most 300 bp.",
+      "return": "A character table for which each nontrivial character encodes the symbol choice at\na single position of the strings.  (Note: the choice of assigning '1' and '0'\nto the two states of each SNP in the strings is arbitrary.)",
+      "sample_dataset": "ATGCTACC\nCGTTTACC\nATTCGACC\nAGTCTCCC\nCGTCTATC",
+      "sample_output": "10110\n10100"
+    },
+    {
+      "id": "CTEA",
+      "title": "Counting Optimal Alignments",
+      "solved_by": "292",
+      "correct_ratio": "56%",
+      "given": "Two protein strings s and t in FASTA format, each of length at most 1000 aa.",
+      "return": "The total number of optimal alignments of s and t with respect to edit\nalignment score, modulo 134,217,727 (227-1).",
+      "sample_dataset": ">Rosalind_78\nPLEASANTLY\n>Rosalind_33\nMEANLY",
+      "sample_output": "4"
+    },
+    {
+      "id": "CUNR",
+      "title": "Counting Unrooted Binary Trees",
+      "solved_by": "263",
+      "correct_ratio": "61%",
+      "given": "A positive integer n (n \\leq 1000).",
+      "return": "The value of b(n) modulo 1,000,000.",
+      "sample_dataset": "5",
+      "sample_output": "15"
+    },
+    {
+      "id": "GLOB",
+      "title": "Global Alignment with Scoring Matrix",
+      "solved_by": "548",
+      "correct_ratio": "68%",
+      "given": "Two protein strings s and t in FASTA format (each of length at most 1000 aa).",
+      "return": "The maximum alignment score between s and t. Use:",
+      "sample_dataset": ">Rosalind_67\nPLEASANTLY\n>Rosalind_17\nMEANLY",
+      "sample_output": "8"
+    },
+    {
+      "id": "PCOV",
+      "title": "Genome Assembly with Perfect Coverage",
+      "solved_by": "552",
+      "correct_ratio": "77%",
+      "given": "A collection of (error-free) DNA k-mers (k \\leq 50)\ntaken from the same strand of a circular chromosome. In this dataset, all k-mers\nfrom this strand of the chromosome are present, and their de Bruijn graph consists of exactly one simple cycle.",
+      "return": "A cyclic superstring of minimal length containing the reads (thus corresponding\nto a candidate cyclic chromosome).",
+      "sample_dataset": "ATTAC\nTACAG\nGATTA\nACAGA\nCAGAT\nTTACA\nAGATT",
+      "sample_output": "GATTACA"
+    },
+    {
+      "id": "PRSM",
+      "title": "Matching a Spectrum to a Protein",
+      "solved_by": "408",
+      "correct_ratio": "52%",
+      "given": "A positive integer n followed by a collection of n protein strings s_1, s_2, ..., s_n\nand a multiset R of positive numbers (corresponding to the complete spectrum of some unknown protein string).",
+      "return": "The maximum multiplicity of R \\ominus S[s_k] taken over all strings s_k,\nfollowed by the string s_k for which this maximum multiplicity occurs\n(you may output any such value if multiple solutions exist).",
+      "sample_dataset": "4\nGSDMQS\nVWICN\nIASWMQS\nPVSMGAD\n445.17838\n115.02694\n186.07931\n314.13789\n317.1198\n215.09061",
+      "sample_output": "3\nIASWMQS"
+    },
+    {
+      "id": "QRT",
+      "title": "Quartets",
+      "solved_by": "219",
+      "correct_ratio": "35%",
+      "given": "A partial character table C.",
+      "return": "The collection of all quartets that can be inferred from the splits corresponding to the underlying characters of C.",
+      "sample_dataset": "cat dog elephant ostrich mouse rabbit robot\n01xxx00\nx11xx00\n111x00x",
+      "sample_output": "{elephant, dog} {rabbit, robot}\n{cat, dog} {mouse, rabbit}\n{mouse, rabbit} {cat, elephant}\n{dog, elephant} {mouse, rabbit}"
+    },
+    {
+      "id": "SGRA",
+      "title": "Using the Spectrum Graph to Infer Peptides",
+      "solved_by": "350",
+      "correct_ratio": "62%",
+      "given": "A list L (of length at most 100) containing positive real numbers.",
+      "return": "The longest protein string that matches the spectrum graph of L\n(if multiple solutions exist, you may output any one of them).  Consult the monoisotopic mass table.",
+      "sample_dataset": "3524.8542\n3623.5245\n3710.9335\n3841.974\n3929.00603\n3970.0326\n4026.05879\n4057.0646\n4083.08025",
+      "sample_output": "WMSPG"
+    },
+    {
+      "id": "SUFF",
+      "title": "Encoding Suffix Trees",
+      "solved_by": "307",
+      "correct_ratio": "56%",
+      "given": "A DNA string s of length at most 1kbp.",
+      "return": "The substrings of s^* encoding the edges of the suffix tree for s.  You may list these substrings in any order.",
+      "sample_dataset": "ATAAATG$",
+      "sample_output": "AAATG$\nG$\nT\nATG$\nTG$\nA\nA\nAAATG$\nG$\nT\nG$\n$"
+    },
+    {
+      "id": "CHBP",
+      "title": "Character-Based Phylogeny",
+      "solved_by": "146",
+      "correct_ratio": "35%",
+      "given": "A list of n species (n \\leq 80) and an n-column character table C in which\nthe jth column denotes the jth species.",
+      "return": "An unrooted binary tree in Newick format that models C.",
+      "sample_dataset": "cat dog elephant mouse rabbit rat\n011101\n001101\n001100",
+      "sample_output": "(dog,(cat,rabbit),(rat,(elephant,mouse)));"
+    },
+    {
+      "id": "CNTQ",
+      "title": "Counting Quartets",
+      "solved_by": "154",
+      "correct_ratio": "55%",
+      "given": "A positive integer n (4 \\leq n \\leq 5000), followed by an unrooted binary tree T\nin Newick format on n taxa.",
+      "return": "The value of q(T) modulo 1,000,000.",
+      "sample_dataset": "6\n(lobster,(cat,dog),(caterpillar,(elephant,mouse)));",
+      "sample_output": "15"
+    },
+    {
+      "id": "EUBT",
+      "title": "Enumerating Unrooted Binary Trees",
+      "solved_by": "143",
+      "correct_ratio": "55%",
+      "given": "A collection of species names representing n taxa.",
+      "return": "A list containing all unrooted binary trees whose leaves are these n taxa.\nTrees should be given in Newick format, with one tree on each line; the order of the trees is unimportant.",
+      "sample_dataset": "dog cat mouse elephant",
+      "sample_output": "(((mouse,cat),elephant))dog;\n(((elephant,mouse),cat))dog;\n(((elephant,cat),mouse))dog;"
+    },
+    {
+      "id": "GASM",
+      "title": "Genome Assembly Using Reads",
+      "solved_by": "302",
+      "correct_ratio": "68%",
+      "given": "A collection S of (error-free) reads of equal length (not exceeding 50 bp).\nIn this dataset, for some positive integer k, the de Bruijn graph B_k on S_{k+1} \\cup S_{k+1}^{\\textrm{rc}} consists of exactly two directed cycles.",
+      "return": "A cyclic superstring of minimal length containing every read or its reverse complement.",
+      "sample_dataset": "AATCT\nTGTAA\nGATTA\nACAGA",
+      "sample_output": "GATTACA"
+    },
+    {
+      "id": "GCON",
+      "title": "Global Alignment with Constant Gap Penalty",
+      "solved_by": "348",
+      "correct_ratio": "39%",
+      "given": "Two protein strings s and t in FASTA format (each of length at most 1000 aa).",
+      "return": "The maximum alignment score between s and t. Use:",
+      "sample_dataset": ">Rosalind_79\nPLEASANTLY\n>Rosalind_41\nMEANLY",
+      "sample_output": "13"
+    },
+    {
+      "id": "LING",
+      "title": "Linguistic Complexity of a Genome",
+      "solved_by": "183",
+      "correct_ratio": "70%",
+      "given": "A DNA string s of length at most 100 kbp.",
+      "return": "The linguistic complexity \\textrm{lc}(s).",
+      "sample_dataset": "ATTTGGATT",
+      "sample_output": "0.875"
+    },
+    {
+      "id": "LOCA",
+      "title": "Local Alignment with Scoring Matrix",
+      "solved_by": "371",
+      "correct_ratio": "49%",
+      "given": "Two protein strings s and t in FASTA format (each having length at most 1000 aa).",
+      "return": "A maximum alignment score along with substrings r and u of s and t,\nrespectively, which produce this maximum alignment score (multiple solutions may exist,\nin which case you may output any one). Use:",
+      "sample_dataset": ">Rosalind_80\nMEANLYPRTEINSTRING\n>Rosalind_21\nPLEASANTLYEINSTEIN",
+      "sample_output": "23\nLYPRTEINSTRIN\nLYEINSTEIN"
+    },
+    {
+      "id": "MEND",
+      "title": "Inferring Genotype from a Pedigree",
+      "solved_by": "238",
+      "correct_ratio": "87%",
+      "given": "A rooted binary tree T in Newick format encoding an individual's pedigree\nfor a Mendelian factor whose alleles are A (dominant) and a (recessive).",
+      "return": "Three numbers between 0 and 1, corresponding to the respective probabilities that\nthe individual at the root of T will exhibit the \"AA\", \"Aa\" and \"aa\" genotypes.",
+      "sample_dataset": "((((Aa,aa),(Aa,Aa)),((aa,aa),(aa,AA))),Aa);",
+      "sample_output": "0.156 0.5 0.344"
+    },
+    {
+      "id": "MGAP",
+      "title": "Maximizing the Gap Symbols of an Optimal Alignment",
+      "solved_by": "192",
+      "correct_ratio": "53%",
+      "given": "Two DNA strings s and t in FASTA format (each of length at most 5000 bp).",
+      "return": "The maximum number of gap symbols that can appear in any maximum score alignment of s and t with\nscore parameters satisfying m > 0, d < 0, and g < 0.",
+      "sample_dataset": ">Rosalind_92\nAACGTA\n>Rosalind_47\nACACCTA",
+      "sample_output": "3"
+    },
+    {
+      "id": "MREP",
+      "title": "Identifying Maximal Repeats",
+      "solved_by": "164",
+      "correct_ratio": "53%",
+      "given": "A DNA string s of length at most 1 kbp.",
+      "return": "A list containing all maximal repeats of s having length at least 20.",
+      "sample_dataset": "TAGAGATAGAATGGGTCCAGAGTTTTGTAATTTCCATGGGTCCAGAGTTTTGTAATTTATTATATAGAGATAGAATGGGTCCAGAGTTTTGTAATTTCCATGGGTCCAGAGTTTTGTAATTTAT",
+      "sample_output": "TAGAGATAGAATGGGTCCAGAGTTTTGTAATTTCCATGGGTCCAGAGTTTTGTAATTTAT\nATGGGTCCAGAGTTTTGTAATTT"
+    },
+    {
+      "id": "MULT",
+      "title": "Multiple Alignment",
+      "solved_by": "199",
+      "correct_ratio": "32%",
+      "given": "A collection of four DNA strings of length at most 10 bp in FASTA format.",
+      "return": "A multiple alignment of the strings having maximum score, where we score matched symbols 0\n(including matched gap symbols) and all mismatched symbols -1 (thus incorporating a linear gap penalty of 1).",
+      "sample_dataset": ">Rosalind_7\nATATCCG\n>Rosalind_35\nTCCG\n>Rosalind_23\nATGTACTG\n>Rosalind_44\nATGTCTG",
+      "sample_output": "-18\nATAT-CCG\n-T---CCG\nATGTACTG\nATGT-CTG"
+    },
+    {
+      "id": "PDPL",
+      "title": "Creating a Restriction Map",
+      "solved_by": "212",
+      "correct_ratio": "59%",
+      "given": "A multiset L containing \\binom{n}{2} positive integers for some positive integer n.",
+      "return": "A set X containing n nonnegative integers such that \\Delta X = L.",
+      "sample_dataset": "2 2 3 3 4 5 6 7 8 10",
+      "sample_output": "0 2 4 7 10"
+    },
+    {
+      "id": "ROOT",
+      "title": "Counting Rooted Binary Trees",
+      "solved_by": "223",
+      "correct_ratio": "71%",
+      "given": "A positive integer n (n \\leq 1000).",
+      "return": "The value of B(n) modulo 1,000,000.",
+      "sample_dataset": "4",
+      "sample_output": "15"
+    },
+    {
+      "id": "SEXL",
+      "title": "Sex-Linked Inheritance",
+      "solved_by": "397",
+      "correct_ratio": "83%",
+      "given": "An array A of length n for which A[k] represents the proportion of males in a population\nexhibiting the k-th of n total recessive X-linked genes. Assume that the population is in genetic equilibrium\nfor all n genes.",
+      "return": "An array B of length n in which B[k] equals the probability\nthat a randomly selected female will be a carrier for the k-th gene.",
+      "sample_dataset": "0.1 0.5 0.8",
+      "sample_output": "0.18 0.5 0.32"
+    },
+    {
+      "id": "SPTD",
+      "title": "Phylogeny Comparison with Split Distance",
+      "solved_by": "159",
+      "correct_ratio": "70%",
+      "given": "A collection of at most 3,000 species taxa and two unrooted binary trees T_1 and T_2\non these taxa in Newick format.",
+      "return": "The split distance d_{\\textrm{split}}(T_1, T_2).",
+      "sample_dataset": "dog rat elephant mouse cat rabbit\n(rat,(dog,cat),(rabbit,(elephant,mouse)));\n(rat,(cat,dog),(elephant,(mouse,rabbit)));",
+      "sample_output": "2"
+    },
+    {
+      "id": "WFMD",
+      "title": "The Wright-Fisher Model of Genetic Drift",
+      "solved_by": "311",
+      "correct_ratio": "68%",
+      "given": "Positive integers N (N \\leq 7), m (m \\leq 2N), g (g \\leq 6) and k (k \\leq 2N).",
+      "return": "The probability that in a population of N diploid individuals initially possessing m copies\nof a dominant allele, we will observe after g generations at least k copies of a recessive allele.\nAssume the Wright-Fisher model.",
+      "sample_dataset": "4 6 2 1",
+      "sample_output": "0.772"
+    },
+    {
+      "id": "ALPH",
+      "title": "Alignment-Based Phylogeny",
+      "solved_by": "109",
+      "correct_ratio": "37%",
+      "given": "A rooted binary tree T on n (n \\leq 500) species, given in Newick format, followed by\na multiple alignment of m (m \\leq n) augmented DNA strings having the same length (at most 300 bp)\ncorresponding to the species and given in FASTA format.",
+      "return": "The minimum possible value of d_{\\textrm{H}}(T), followed by a collection of DNA strings\nto be assigned to the internal nodes of T that will minimize d_{\\textrm{H}}(T)\n(multiple solutions will exist, but you need only output one).",
+      "sample_dataset": "(((ostrich,cat)rat,(duck,fly)mouse)dog,(elephant,pikachu)hamster)robot;\n>ostrich\nAC\n>cat\nCA\n>duck\nT-\n>fly\nGC\n>elephant\n-T\n>pikachu\nAA",
+      "sample_output": "8\n>rat\nAC\n>mouse\nTC\n>dog\nAC\n>hamster\nAT\n>robot\nAC"
+    },
+    {
+      "id": "ASMQ",
+      "title": "Assessing Assembly Quality with N50 and N75",
+      "solved_by": "240",
+      "correct_ratio": "76%",
+      "given": "A collection of at most 1000 DNA strings\n(whose combined length does not exceed 50 kbp).",
+      "return": "N50 and N75 for this collection of strings.",
+      "sample_dataset": "GATTACA\nTACTACTAC\nATTGAT\nGAAGA",
+      "sample_output": "7 6"
+    },
+    {
+      "id": "CSET",
+      "title": "Fixing an Inconsistent Character Set",
+      "solved_by": "121",
+      "correct_ratio": "56%",
+      "given": "An inconsistent character table C on at most 100 taxa.",
+      "return": "A submatrix of C' representing a consistent character table on the same taxa\nand formed by deleting a single row of C. (If multiple solutions exist, you may return any one.)",
+      "sample_dataset": "100001\n000110\n111000\n100111",
+      "sample_output": "000110\n100001\n100111"
+    },
+    {
+      "id": "EBIN",
+      "title": "Wright-Fisher's Expected Behavior",
+      "solved_by": "260",
+      "correct_ratio": "75%",
+      "given": "A positive integer n (n \\leq 1000000) followed by an array P of length\nm (m \\leq 20) containing numbers between 0 and 1.  Each element of P can be seen\nas representing a probability corresponding to an allele frequency.",
+      "return": "An array B of length m for which B[k] is the expected value of \\mathrm{Bin}(n, P[k]);\nin terms of Wright-Fisher, it represents the expected allele frequency of the next generation.",
+      "sample_dataset": "17\n0.1 0.2 0.3",
+      "sample_output": "1.7 3.4 5.1"
+    },
+    {
+      "id": "FOUN",
+      "title": "The Founder Effect and Genetic Drift",
+      "solved_by": "245",
+      "correct_ratio": "79%",
+      "given": "Two positive integers N and m, followed by an array A containing k integers between 0 and 2N.\nA[j] represents the number of recessive alleles for the j-th factor in a population of N\ndiploid individuals.",
+      "return": "An m \\times k matrix B for which B_{i, j} represents the common logarithm\nof the probability that after i generations, no copies of the recessive allele\nfor the j-th factor will remain in the population. Apply the Wright-Fisher model.",
+      "sample_dataset": "4 3\n0 1 2",
+      "sample_output": "0.0 -0.463935575821 -0.999509892866\n0.0 -0.301424998891 -0.641668367342\n0.0 -0.229066698008 -0.485798552456"
+    },
+    {
+      "id": "GAFF",
+      "title": "Global Alignment with Scoring Matrix and Affine Gap Penalty",
+      "solved_by": "288",
+      "correct_ratio": "38%",
+      "given": "Two protein strings s and t in FASTA format (each of length at most 100 aa).",
+      "return": "The maximum alignment score between s and t, followed by two augmented strings s' and t'\nrepresenting an optimal alignment of s and t.  Use:",
+      "sample_dataset": ">Rosalind_49\nPRTEINS\n>Rosalind_47\nPRTWPSEIN",
+      "sample_output": "8\nPRT---EINS\nPRTWPSEIN-"
+    },
+    {
+      "id": "GREP",
+      "title": "Genome Assembly with Perfect Coverage and Repeats",
+      "solved_by": "184",
+      "correct_ratio": "66%",
+      "given": "A list S_{k+1} of error-free DNA (k+1)-mers (k \\leq 5) taken from the same strand\nof a circular chromosome (of length \\leq 50).",
+      "return": "All circular strings assembled by complete cycles in the de Bruijn graph B_k of S_{k+1}.\nThe strings may be given in any order, but each one should begin with the first\n(k+1)-mer provided in the input.",
+      "sample_dataset": "CAG\nAGT\nGTT\nTTT\nTTG\nTGG\nGGC\nGCG\nCGT\nGTT\nTTC\nTCA\nCAA\nAAT\nATT\nTTC\nTCA",
+      "sample_output": "CAGTTCAATTTGGCGTT\nCAGTTCAATTGGCGTTT\nCAGTTTCAATTGGCGTT\nCAGTTTGGCGTTCAATT\nCAGTTGGCGTTCAATTT\nCAGTTGGCGTTTCAATT"
+    },
+    {
+      "id": "OAP",
+      "title": "Overlap Alignment",
+      "solved_by": "166",
+      "correct_ratio": "55%",
+      "given": "Two DNA strings s and t in FASTA format, each having length at most 10 kbp.",
+      "return": "The score of an optimal overlap alignment of s and t, followed by an alignment\nof a suffix s' of s and a prefix t' of t achieving this optimal score.\nUse an alignment score in which matching symbols count +1, substitutions count -2, and\nthere is a linear gap penalty of 2.  If multiple optimal alignments exist, then you may return any one.",
+      "sample_dataset": ">Rosalind_54\nCTAAGGGATTCCGGTAATTAGACAG\n>Rosalind_45\nATAGACCATATGTCAGTGACTGTGTAA",
+      "sample_output": "1\nATTAGAC-AG\nAT-AGACCAT"
+    },
+    {
+      "id": "QRTD",
+      "title": "Quartet Distance",
+      "solved_by": "77",
+      "correct_ratio": "44%",
+      "given": "A list containing n taxa (n \\leq 2000) and two unrooted binary trees T_1 and T_2\non the given taxa.  Both T_1 and T_2 are given in Newick format.",
+      "return": "The quartet distance d_\\textrm{q}(T_1, T_2).",
+      "sample_dataset": "A B C D E\n(A,C,((B,D),E));\n(C,(B,D),(A,E));",
+      "sample_output": "4"
+    },
+    {
+      "id": "SIMS",
+      "title": "Finding a Motif with Modifications",
+      "solved_by": "199",
+      "correct_ratio": "65%",
+      "given": "Two DNA strings s and t, where s has length at most 10 kbp and t\nrepresents a motif of length at most 1 kbp.",
+      "return": "An optimal fitting alignment score with respect to the mismatch score defined above,\nfollowed by an optimal fitting alignment of a substring of s against t.\nIf multiple such alignments exist, then you may output any one.",
+      "sample_dataset": ">Rosalind_54\nGCAAACCATAAGCCCTACGTGCCGCCTGTTTAAACTCGCGAACTGAATCTTCTGCTTCACGGTGAAAGTACCACAATGGTATCACACCCCAAGGAAAC\n>Rosalind_46\nGCCGTCAGGCTGGTGTCCG",
+      "sample_output": "5\nACCATAAGCCCTACGTG-CCG\nGCCGTCAGGC-TG-GTGTCCG"
+    },
+    {
+      "id": "SMGB",
+      "title": "Semiglobal Alignment",
+      "solved_by": "170",
+      "correct_ratio": "43%",
+      "given": "Two DNA strings s and t in FASTA format, each having length at most 10 kbp.",
+      "return": "The maximum semiglobal alignment score of s and t, followed by an alignment of s\nand t achieving this maximum score.  Use an alignment score in which matching symbols\ncount +1, substitutions count -1, and there is a linear gap penalty of 1.\nIf multiple optimal alignments exist, then you may return any one.",
+      "sample_dataset": ">Rosalind_79\nCAGCACTTGGATTCTCGG\n>Rosalind_98\nCAGCGTGG",
+      "sample_output": "4\nCAGCA-CTTGGATTCTCGG\n---CAGCGTGG--------"
+    },
+    {
+      "id": "KSIM",
+      "title": "Finding All Similar Motifs",
+      "solved_by": "72",
+      "correct_ratio": "28%",
+      "given": "A positive integer k (k \\leq 50), a DNA string s of length at most 5 kbp\nrepresenting a motif, and a DNA string t of length at most 50 kbp representing a genome.",
+      "return": "All substrings t' of t such that the edit distance d_{\\mathrm{E}}(s, t') is\nless than or equal to k.  Each substring should be encoded by a pair containing its location\nin t followed by its length.",
+      "sample_dataset": "2\nACGTAG\nACGGATCGGCATCGT",
+      "sample_output": "1 4\n1 5\n1 6"
+    },
+    {
+      "id": "LAFF",
+      "title": "Local Alignment with Affine Gap Penalty",
+      "solved_by": "168",
+      "correct_ratio": "36%",
+      "given": "Two protein strings s and t in FASTA format (each having length at most 10,000 aa).",
+      "return": "The maximum local alignment score of s and t, followed by substrings r and u of s and t, respectively,\nthat correspond to the optimal local alignment of s and t. Use:",
+      "sample_dataset": ">Rosalind_8\nPLEASANTLY\n>Rosalind_18\nMEANLY",
+      "sample_output": "12\nLEAS\nMEAN"
+    },
+    {
+      "id": "OSYM",
+      "title": "Isolating Symbols in Alignments",
+      "solved_by": "118",
+      "correct_ratio": "82%",
+      "given": "Two DNA strings s and t in FASTA format, each having length at most 1000 bp.",
+      "return": "The maximum alignment score of a global alignment of s and t, followed by\nthe sum of all elements of the matrix \\mathrm{M} corresponding to s and t that was defined above.  Apply the mismatch score\nintroduced in \u201cFinding a Motif with Modifications\u201d.",
+      "sample_dataset": ">Rosalind_35\nATAGATA\n>Rosalind_5\nACAGGTA",
+      "sample_output": "3\n-139"
+    },
+    {
+      "id": "RSUB",
+      "title": "Identifying Reversing Substitutions",
+      "solved_by": "88",
+      "correct_ratio": "50%",
+      "given": "A rooted binary tree T with labeled nodes in Newick format, followed by a collection\nof at most 100 DNA strings in FASTA format whose labels correspond to the labels of T.\nWe will assume that the DNA strings have the same length, which does not exceed 400 bp).",
+      "return": "A list of all reversing substitutions in T (in any order), with each substitution encoded by the following three items:",
+      "sample_dataset": "(((ostrich,cat)rat,mouse)dog,elephant)robot;\n>robot\nAATTG\n>dog\nGGGCA\n>mouse\nAAGAC\n>rat\nGTTGT\n>cat\nGAGGC\n>ostrich\nGTGTC\n>elephant\nAATTC",
+      "sample_output": "dog mouse 1 A->G->A\ndog mouse 2 A->G->A\nrat ostrich 3 G->T->G\nrat cat 3 G->T->G\ndog rat 3 T->G->T"
+    }
+  ],
+  "num_problems": 105,
+  "url": "http://rosalind.info/problems/"
+}
